@@ -1,0 +1,60 @@
+body{
+  height: 100vh;
+  overflow: hidden;
+  background-color: #f0f0f0;
+}
+
+.main-container{
+  background-color: white;
+}
+
+.canvas-wrapper{
+    position: relative;
+    min-height: 805px;
+    min-width: 805px;
+    display: inline-block;
+}
+
+#canvas {
+    padding: 0;
+    margin: auto;
+    display: block;
+    width: 800px;
+    height: 800px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border:1px solid #042956;
+}
+
+.right-panel{
+    width: calc(100% - 822px);
+    vertical-align: top;
+    display: inline-block;
+    margin-top: 3px;
+    margin-left: 12px;
+}
+
+.buttons .btn{
+  width: 30%;
+}
+
+.results{
+  font-size: 15px;
+  font-weight: bold;
+}
+
+footer, header{
+    background-color: #042956;
+    padding: 14px;
+    color: #fff;
+}
+#facebook{
+    background-image: url("../images/facebook.jpg");
+    background-size: cover;
+    height: 15px;
+    width: 15px;
+    display:inline-block;
+}

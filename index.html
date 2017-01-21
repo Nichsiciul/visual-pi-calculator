@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
 
-  <title>Visual PI Calculator</title>
+  <title>Visual &pi; Calculator</title>
   <meta name="description" content="PI calculator">
   <meta name="author" content="Dejan">
 
@@ -15,8 +15,64 @@
 </head>
 
 <body>
+  <header class="container-fluid text-center">
+    <h1>Visual &pi; Calculator</h1>
+  </header>
 
-  <h1>HELLOOO</h1>
+  <div class="container main-container">
+    <div class="canvas-wrapper">
+      <canvas id="canvas" width="800" height="800">
+        Canvas Not Working!
+      </canvas>
+    </div>
+
+    <div class="right-panel">
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <h4>Animation Controls</h4>
+        </div>
+        <div class="panel-body">
+          <div class="buttons text-center">
+            <button id="start" class="btn btn-primary" type="button" name="button"><i class="glyphicon glyphicon-play"></i></button>
+            <button id="pause" class="btn btn-primary" type="button" name="button"><i class="glyphicon glyphicon-pause"></i></button>
+            <button id="stop" class="btn btn-primary" type="button" name="button"><i class="glyphicon glyphicon-stop"></i></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <h4>Canvas Results</h4>
+        </div>
+        <div class="panel-body">
+          <p>
+            Points inside square:
+            <span id="numberOfPoints" class="results">22</span>
+          </p>
+
+          <p>
+            Points inside circle:
+            <span id="pointsInCircle" class="results">3</span>
+          </p>
+
+          <p>
+            Estimated Value of &pi; :
+            <span id="pointsInCircle" class="results">2</span>
+          </p>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer class="footer container-fluid text-right">
+        <span>Copyright © 2016 Dejan Nichsici </span>
+        <a href="http://www.facebook.com/dejan.nichsici">
+          <div id="facebook"></div>
+        </a>
+        <span>. All Rights Reserved.</span>
+  </footer>
 
 
   <script src="bower_components/jquery/dist/jquery.js"></script>
