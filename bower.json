@@ -1,0 +1,26 @@
+{
+  "name": "Visual Pi Calculator",
+  "authors": [
+    "DejanN <nichsici.dejan@gmail.com>"
+  ],
+  "description": "Visualy computes PI",
+  "main": "index.html",
+  "keywords": [
+    "PI",
+    "MonteCarlo",
+    "Canvas"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}
