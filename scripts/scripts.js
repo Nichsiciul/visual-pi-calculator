@@ -28,22 +28,12 @@ var utils = (function($){
 }(jQuery));
 
 var canvas = (function($){
+  //public reference to canvas object
   var $canvas = $("#canvas");
+  //reference to the setInterval result
   var animation;
 
-  function clearCanvas(){
-    $canvas.clearCanvas().drawArc({
-      fillStyle: "white",
-      strokeStyle: globals.circleColor,
-      strokeWidth: 1,
-      x: 400, y: 400,
-      radius: 400
-    });
-    clearInsideCount();
-    clearResult();
-    clearAllPointsCount();
-  }
-
+  //Private functions
   function drawPoint(x,y,color){
     $canvas.drawArc({
       fillStyle: color,
@@ -106,6 +96,21 @@ var canvas = (function($){
       }
       drawPoint(x,y,color);
     });
+  }
+
+
+  // Public functions
+  function clearCanvas(){
+    $canvas.clearCanvas().drawArc({
+      fillStyle: "white",
+      strokeStyle: globals.circleColor,
+      strokeWidth: 1,
+      x: 400, y: 400,
+      radius: 400
+    });
+    clearInsideCount();
+    clearResult();
+    clearAllPointsCount();
   }
 
   function init(){
