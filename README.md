@@ -16,3 +16,8 @@ $ bower install
 ### Running Project
 
 Simply open index.html in the root folder
+
+
+## Future Steps
+
+Adding full responsive, it currently only works for fullHD displays.
