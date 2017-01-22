@@ -1,5 +1,5 @@
 {
-  "name": "Visual Pi Calculator",
+  "name": "visual-pi-calculator",
   "authors": [
     "DejanN <nichsici.dejan@gmail.com>"
   ],
@@ -21,6 +21,7 @@
     "tests"
   ],
   "dependencies": {
-    "bootstrap": "^3.3.7"
+    "bootstrap": "^3.3.7",
+    "jcanvas": "^15.12.12"
   }
 }
